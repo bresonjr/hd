@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene background="color:#FCA68B">
+            <a-entity id="rig" position="-2.2 8 36" rotation="0 0 0">
+                <a-camera id="camera"></a-camera>
+            </a-entity>
+            <a-plane
+            id="floor"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWKHCkcZGlxp1cMvsazu868Abzdi5akgKYg&usqp=CAU"
+            position="0 0 5"
+            rotation="-90 0 0"
+            height="50"
+            width="50"           
+            ></a-plane>
+           
+            <a-plane
+            id="floor"
+            src="https://upload.wikimedia.org/wikipedia/en/1/13/PinkFloydWallCoverOriginalNoText.jpg"
+            position="0 20 -20"
+            rotation="0 0 0"
+            height="40"
+            width="50"           
+            ></a-plane>
+            <a-entity obj-model="obj: #tube-obj; mtl: #tube-mtl"  position="8.5 38 -20" rotation="90 0 0"scale="0.5 0.2 0.15"></a-entity>
+            
+        </a-scene>
+    </body>
+
+</html>
